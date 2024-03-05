@@ -5,34 +5,177 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="button.css">
     <style>
         .button1 {
             margin: 24px;
             width: 80px;
             height: 36px;
             border-radius: 4px;
-            background: #50b83c;
+            background: #fd7301;
             font-family: Roboto;
             font-weight: 500;
             font-size: 14px;
             text-align: left;
             text-align: center;
             line-height: 36px;
-            color: #fff;
+            color: #ffffff;
         }
 
         .button1:hover {
-            background-color: #bfc227;
+            background-color: #e68414;
             cursor: pointer;
+        }
+
+        .codepro-custom-btn {
+            width: 130px;
+            height: 40px;
+            color: #ff7b00;
+            border-radius: 5px;
+            padding: 10px 25px;
+            font-family: 'Lato', sans-serif;
+            font-weight: 500;
+            background: transparent;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            display: inline-block;
+            box-shadow: inset 2px 2px 2px 0 rgba(255, 255, 255, .5), 7px 7px 20px 0 rgba(0, 0, 0, .1), 4px 4px 5px 0 rgba(0, 0, 0, .1);
+            outline: none
+        }
+
+        .codepro-btn-16 {
+            border: none;
+            color: #000
+        }
+
+        .codepro-btn-16:after {
+            position: absolute;
+            content: "";
+            width: 0;
+            height: 100%;
+            top: 0;
+            left: 0;
+            direction: rtl;
+            z-index: -1;
+            box-shadow: -7px -7px 20px 0 #fff9, -4px -4px 5px 0 #fff9, 7px 7px 20px 0 #0002, 4px 4px 5px 0 #0001;
+            transition: all 0.3s ease
+        }
+
+        .codepro-btn-16:hover {
+            color: #000000
+        }
+
+        .codepro-btn-16:hover:after {
+            left: auto;
+            right: 0;
+            width: 100%
+        }
+
+        .codepro-btn-16:active {
+            top: 2px
+        }
+
+        .button-62 {
+            background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+            border: 0;
+            border-radius: 12px;
+            color: #FFFFFF;
+            cursor: pointer;
+            display: inline-block;
+            font-family: -apple-system, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 2.5;
+            outline: transparent;
+            padding: 0 1rem;
+            text-align: center;
+            text-decoration: none;
+            transition: box-shadow .2s ease-in-out;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            white-space: nowrap;
+            margin: 20px;
+        }
+
+        .button-62:not([disabled]):focus {
+            box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+        }
+
+        .button-62:not([disabled]):hover {
+            box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+        }
+
+        .button-64 {
+            align-items: center;
+            background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+            border: 0;
+            border-radius: 8px;
+            box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+            box-sizing: border-box;
+            color: #FFFFFF;
+            display: flex;
+            font-family: Phantomsans, sans-serif;
+            font-size: 20px;
+            justify-content: center;
+            line-height: 1em;
+            max-width: 100%;
+            min-width: 140px;
+            padding: 3px;
+            text-decoration: none;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            white-space: nowrap;
+            cursor: pointer;
+            margin: 20px;
+        }
+
+        .button-64:active,
+        .button-64:hover {
+            outline: 0;
+        }
+
+        .button-64 span {
+            background-color: rgb(5, 6, 45);
+            padding: 16px 24px;
+            border-radius: 6px;
+            width: 100%;
+            height: 100%;
+            transition: 300ms;
+        }
+
+        .button-64:hover span {
+            background: none;
+        }
+
+        @media (min-width: 768px) {
+            .button-64 {
+                font-size: 24px;
+                min-width: 196px;
+            }
         }
     </style>
 </head>
 
 <body>
+    <!-- HTML !-->
+    <!-- HTML !-->
+    <div class="button4">
+        <button class="button-64" role="button"><span class="text">Cái nút</span></button>
+    </div>
+    
+    <div class="button3">
+        <button class="button-62" role="button">Cái nút</button>
+    </div>
     <div class="button1">
         <div class="button-type">
-            <div class="text">Cai nut</div>
+            <div class="text">Cái nút</div>
         </div>
+    </div>
+    <div class="button2">
+        <button class="codepro-custom-btn codepro-btn-16">Cái nút</button>
     </div>
 </body>
 
