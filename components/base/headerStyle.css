@@ -21,6 +21,7 @@
 }
 
 #header-title li:hover a{
+    cursor: pointer;
     color: #000;
     background-color: #ccc;
     display: inline-block;
