@@ -1,0 +1,27 @@
+.header{
+    height: 50px;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10; /* Đảm bảo header luôn ở trên cùng */
+}
+
+#header-title li {
+    display: inline-block;
+}
+
+#header-title li a{
+    color: #fff;
+    text-decoration: none;
+    line-height: 50px;
+    padding: 0 24px;
+    /* display: inline-block; */
+}
+
+#header-title li:hover a{
+    color: #000;
+    background-color: #ccc;
+    display: inline-block;
+}
