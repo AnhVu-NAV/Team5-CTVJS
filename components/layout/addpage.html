@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="/styles/layout/addpage.css"> -->
+    <!-- <link rel="stylesheet" href="/styles/base/button.css"> -->
+    <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="head">
+            <h1 class="title">FPT University Class Change Support</h1>
+            <!-- <p class="note">Mỗi môn học muốn đổi tạo một form mới! Có thể không điền lớp mới muốn chuyển !</p> -->
+        </div>
+    </div>
+    <div class="form_main">
+        <form action="#">
+            <p class="command1">Your current class and the subject you want to change:</p>
+            <label for="current_class">Current class:</label>
+            <input type="text" id="current_class" name="current_class" placeholder="Ex: SE1890, AI1924, ... (required)"
+                required>
+
+            <label for="current_subject">Subject:</label>
+            <input type="text" id="current_subject" name="current_subject"
+                placeholder="Ex: MAE101, PRO192, ... (required)" required>
+
+            <label for="table1">Current time and slot:</label>
+
+            <table class="table1">
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Slot 1</td>
+                        <td><input type="checkbox" class="check"></td>
+                        <td><input type="checkbox" class="check"></td>
+                        <td><input type="checkbox" class="check"></td>
+                        <td><input type="checkbox" class="check"></td>
+                        <td><input type="checkbox" class="check"></td>
+                        <td><input type="checkbox" class="check"></td>
+                    </tr>
+                    <tr>
+                        <td>Slot 2</td>
+                        <td><input type="checkbox" class="check"></td>
+                        <td><input type="checkbox" class="check"></td>
+                        <td><input type="checkbox" class="check"></td>
+                        <td><input type="checkbox" class="check"></td>
+                        <td><input type="checkbox" class="check"></td>
+                        <td><input type="checkbox" class="check"></td>
+                    </tr>
+                    <tr>
+                        <td>Slot 3</td>
+                        <td><input type="checkbox" class="check"></td>
+                        <td><input type="checkbox" class="check"></td>
+                        <td><input type="checkbox" class="check"></td>
+                        <td><input type="checkbox" class="check"></td>
+                        <td><input type="checkbox" class="check"></td>
+                        <td><input type="checkbox" class="check"></td>
+                    </tr>
+                    <tr>
+                        <td>Slot 4</td>
+                        <td><input type="checkbox" class="check"></td>
+                        <td><input type="checkbox" class="check"></td>
+                        <td><input type="checkbox" class="check"></td>
+                        <td><input type="checkbox" class="check"></td>
+                        <td><input type="checkbox" class="check"></td>
+                        <td><input type="checkbox" class="check"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p class="command1">Time and slot want to change:</p>
+            <label for="new_class">Class:</label>
+            <input type="text" id="new_class" name="new_class" placeholder="Ex: GD1880,... (optional)">
+
+            <label for="new_time">Future time and slot (required):</label>
+            <table class="new_time">
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Slot 1</td>
+                        <td><input type="checkbox" class="meo"></td>
+                        <td><input type="checkbox" class="meo"></td>
+                        <td><input type="checkbox" class="meo"></td>
+                        <td><input type="checkbox" class="meo"></td>
+                        <td><input type="checkbox" class="meo"></td>
+                        <td><input type="checkbox" class="meo"></td>
+                    </tr>
+                    <tr>
+                        <td>Slot 2</td>
+                        <td><input type="checkbox" class="meo"></td>
+                        <td><input type="checkbox" class="meo"></td>
+                        <td><input type="checkbox" class="meo"></td>
+                        <td><input type="checkbox" class="meo"></td>
+                        <td><input type="checkbox" class="meo"></td>
+                        <td><input type="checkbox" class="meo"></td>
+                    </tr>
+                    <tr>
+                        <td>Slot 3</td>
+                        <td><input type="checkbox" class="meo"></td>
+                        <td><input type="checkbox" class="meo"></td>
+                        <td><input type="checkbox" class="meo"></td>
+                        <td><input type="checkbox" class="meo"></td>
+                        <td><input type="checkbox" class="meo"></td>
+                        <td><input type="checkbox" class="meo"></td>
+                    </tr>
+                    <tr>
+                        <td>Slot 4</td>
+                        <td><input type="checkbox" class="meo"></td>
+                        <td><input type="checkbox" class="meo"></td>
+                        <td><input type="checkbox" class="meo"></td>
+                        <td><input type="checkbox" class="meo"></td>
+                        <td><input type="checkbox" class="meo"></td>
+                        <td><input type="checkbox" class="meo"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <label for="note">Note:</label>
+            <input type="note" id="your-input" name="note" placeholder="You can note specific requests!">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your @fpt.edu.vn" required>
+
+            <button type="submit">Send request</button>
+        </form>
+    </div>
+    <script src="../javacript/addpage.js"></script>
+</body>
+</html>

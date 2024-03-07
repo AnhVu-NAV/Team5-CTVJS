@@ -1,0 +1,77 @@
+*{
+    font: normal 16px/20px "Roboto", sans-serif ;
+}
+body{
+    background-color: #2d2d2d;
+}
+
+h1.title {
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-bottom: 1%;
+    color: #e74c3c;
+    font: bold normal 50px/70px "Roboto", sans-serif;
+}
+
+.note {
+    margin-top: 1%;
+    margin-bottom: 20px;
+    margin-left: 5%;
+    color: #ffffff;
+}
+
+p {
+    padding-top: 5px;
+    margin-bottom: 5px;
+}
+
+.command1 {
+    font-style: italic;
+    margin-top: 10px;
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.75);
+    width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 2dvb;
+}
+
+label {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+input{
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #3b3a3a;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #020202;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #e74c3c;
+}
+
+tbody tr:hover {
+    background-color: #e74c3c;
+}
+
+::placeholder{
+    font-style: italic;
+    font-size: medium;
+}

@@ -1,60 +1,13 @@
-.button1 {
-    margin: 24px;
-    width: 80px;
-    height: 36px;
-    border-radius: 4px;
-    background: #0059ff;
-    font-family: Roboto;
-    font-weight: 500;
-    font-size: 14px;
-    text-align: left;
-    text-align: center;
-    line-height: 36px;
-    color: #ffffff;
+button {
+    margin-top: 20px;
+    margin-left: 42%;
+    margin-right: 25%;
+    padding: 10px 20px;
+    background-color: #e74c3c;
+    border-radius: 1dvb;
+    color: #000000;
 }
 
-.button1:hover {
-    background-color: #297fff;
-    cursor: pointer;
-}
-.codepro-custom-btn{
-    width:130px;
-    height:40px;
-    color:#fff;
-    border-radius:5px;
-    padding:10px 25px;
-    font-family:'Lato',sans-serif;
-    font-weight:500;
-    background:transparent;
-    cursor:pointer;
-    transition:all 0.3s ease;
-    position:relative;
-    display:inline-block;
-    box-shadow:inset 2px 2px 2px 0 rgba(255,255,255,.5),7px 7px 20px 0 rgba(0,0,0,.1),4px 4px 5px 0 rgba(0,0,0,.1);
-    outline:none
-}
-.codepro-btn-16{
-    border:none;
-    color:#000
-}
-.codepro-btn-16:after{
-    position:absolute;
-    content:"";
-    width:0;
-    height:100%;
-    top:0;
-    left:0;
-    direction:rtl;
-    z-index:-1;
-    box-shadow:-7px -7px 20px 0 #fff9,-4px -4px 5px 0 #fff9,7px 7px 20px 0 #0002,4px 4px 5px 0 #0001;
-    transition:all 0.3s ease
-}
-.codepro-btn-16:hover{
-    color:#000
-}
-.codepro-btn-16:hover:after{
-    left:auto;right:0;width:100%
-}
-.codepro-btn-16:active{
-    top:2px
+button:hover{
+    background-color: #ff4d00;
 }

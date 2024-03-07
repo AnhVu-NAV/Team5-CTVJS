@@ -1,3 +1,5 @@
 /* chỗ này để import tất cả css */
 @import url(../assets/fonts/font.css);
 @import url(demo.css);
+@import url(../styles/layout/addpage.css);
+@import url(../styles/base/button.css);
