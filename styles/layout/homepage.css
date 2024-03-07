@@ -126,11 +126,13 @@ span {
   margin-left: 15rem;
   margin-top: 3rem;
 }
-input {
-  padding: 4.1px 4px;
-  height: 2.5rem;
-  width: 27rem;
-
+.input-homepage {
+  width: 28rem;
+  border: none;
+  padding-left: 1.1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1rem;
   border-top-left-radius: 0.4rem;
   border-bottom-left-radius: 0.4rem;
 }
@@ -138,16 +140,30 @@ input:active {
   border-color: #999;
   color: #999;
 }
-button {
-  height: 3.3rem;
-  width: 11rem;
 
-  background-color: #e74c3c;
+.box {
+  display: inline-flex;
+  height: 4rem;
+}
+.box a {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+
+  padding-left: 2rem;
+  padding-right: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 8rem;
   border-top-right-radius: 0.4rem;
   border-bottom-right-radius: 0.4rem;
-}
-button:hover {
-  color: #999;
+  background-color: #e74c3c;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  color: white;
   font-weight: bolder;
-  background-color: #fd6a59;
+}
+.box a:hover {
+  background-color: #fb5b49;
+  font-weight: bolder;
 }
