@@ -1,6 +1,6 @@
-*{
+/* *{
     font: normal 16px/20px "Roboto", sans-serif ;
-}
+} */
 body{
     background-color: #2d2d2d;
 }
@@ -10,7 +10,7 @@ h1.title {
     margin-left: 5%;
     margin-bottom: 1%;
     color: #e74c3c;
-    font: bold normal 50px/70px "Roboto", sans-serif;
+    font: bold normal 40px/60px "Roboto", sans-serif;
 }
 
 .note {
@@ -21,6 +21,7 @@ h1.title {
 }
 
 p {
+    font: normal 16px/20px "Roboto", sans-serif ;
     padding-top: 5px;
     margin-bottom: 5px;
 }
@@ -40,6 +41,7 @@ form {
 }
 
 label {
+    font: bold normal 16px/20px "Roboto", sans-serif ;
     display: block;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -47,8 +49,9 @@ label {
 
 input{
     width: 100%;
-    padding: 5px;
+    padding: 10px;
     border: 1px solid #3b3a3a;
+    border-radius: 1.5dvb;
 }
 
 table {
@@ -58,6 +61,7 @@ table {
 
 th,
 td {
+    font: normal 16px/20px "Roboto", sans-serif ;
     border: 1px solid #020202;
     padding: 8px;
     text-align: center;
@@ -72,6 +76,7 @@ tbody tr:hover {
 }
 
 ::placeholder{
+    font: normal 16px/20px "Roboto", sans-serif ;
     font-style: italic;
     font-size: medium;
 }
