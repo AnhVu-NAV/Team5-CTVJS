@@ -1,3 +1,9 @@
 /* chỗ này để import tất cả css */
 @import url(../assets/fonts/font.css);
-@import url(demo.css);
+@import url(./base/header_footer.css);
+@import url(./base/reset.css);
+*{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}

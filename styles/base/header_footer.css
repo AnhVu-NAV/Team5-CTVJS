@@ -5,13 +5,25 @@
 }
 
 .header{
-    height: 50px;
+    height: 60px;
     background-color: #000;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 10; /* Đảm bảo header luôn ở trên cùng */
+}
+
+#homeLogo{
+    color: #e74c3c !important;
+    font-size: 30px;
+    font-weight: bolder;
+    
+}
+
+#homeLogo:hover{
+    cursor: pointer;
+    background-color: #000 !important;
 }
 
 #header-title li {
@@ -26,7 +38,7 @@
     /* display: inline-block; */
 }
 
-#header-title li:hover a{
+#header-title li:hover #itemheader{
     cursor: pointer;
     color: #000;
     background-color: #ccc;
@@ -39,7 +51,7 @@
     top: 0;
     left: 0;
     right: 0;
-    padding: 64px 16px;
+    padding: 20px 16px;
     text-align: center;
 }
 
