@@ -1,6 +1,4 @@
-/* *{
-    font: normal 16px/20px "Roboto", sans-serif ;
-} */
+
 body{
     background-color: #2d2d2d;
 }
@@ -20,18 +18,15 @@ h1.title {
     color: #ffffff;
 }
 
-p {
-    font: normal 16px/20px "Roboto", sans-serif ;
+.command1 {
+    font-style: italic;
+    margin-top: 10px;
+    font: bold normal 16px/20px "Roboto", sans-serif ;
     padding-top: 5px;
     margin-bottom: 5px;
 }
 
-.command1 {
-    font-style: italic;
-    margin-top: 10px;
-}
-
-form {
+.form_main {
     background-color: rgba(255, 255, 255, 0.75);
     width: 900px;
     margin: 0 auto;
@@ -40,21 +35,21 @@ form {
     border-radius: 2dvb;
 }
 
-label {
+.form_main .meomeo {
     font: bold normal 16px/20px "Roboto", sans-serif ;
     display: block;
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
-input{
+.fillin{
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     border: 1px solid #3b3a3a;
     border-radius: 1.5dvb;
 }
 
-table {
+.table1, .new_time {
     width: 100%;
     border-collapse: collapse;
 }
@@ -72,10 +67,10 @@ th {
 }
 
 tbody tr:hover {
-    background-color: #e74c3c;
+    background-color: #d16052;
 }
 
-::placeholder{
+.fillin::placeholder{
     font: normal 16px/20px "Roboto", sans-serif ;
     font-style: italic;
     font-size: medium;

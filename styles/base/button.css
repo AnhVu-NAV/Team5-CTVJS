@@ -1,4 +1,4 @@
-button {
+.button_send .send_request{
     font: normal 16px/20px "Roboto", sans-serif ;
     margin-top: 20px;
     margin-left: 42%;
@@ -9,6 +9,6 @@ button {
     color: #000000;
 }
 
-button:hover{
+.button_send .send_request:hover{
     background-color: #ff4d00;
 }
