@@ -1,60 +1,49 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.header{
-    height: 60px;
-    background-color: #000;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 10; /* Đảm bảo header luôn ở trên cùng */
+.header {
+  height: 60px;
+  background-color: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10; /* Đảm bảo header luôn ở trên cùng */
 }
 
-#homeLogo{
-    color: #e74c3c !important;
-    font-size: 30px;
-    font-weight: bolder;
-    
+#homeLogo {
+  color: #e74c3c !important;
+  font-size: 30px;
+  font-weight: bolder;
 }
 
-#homeLogo:hover{
-    cursor: pointer;
-    background-color: #000 !important;
+#homeLogo:hover {
+  cursor: pointer;
+  background-color: #000 !important;
 }
 
 #header-title li {
-    display: inline-block;
+  display: inline-block;
 }
 
-#header-title li a{
-    color: #fff;
-    text-decoration: none;
-    line-height: 50px;
-    padding: 0 24px;
-    /* display: inline-block; */
+#header-title li a {
+  color: #fff;
+  text-decoration: none;
+  line-height: 50px;
+  padding: 0 24px;
+  /* display: inline-block; */
 }
 
-#header-title li:hover #itemheader{
-    cursor: pointer;
-    color: #000;
-    background-color: #ccc;
-    display: inline-block;
+#header-title li:hover #itemheader {
+  cursor: pointer;
+  color: #000;
+  background-color: #ccc;
+  display: inline-block;
 }
 
-
-.footer{
-    background-color: #fff;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding: 20px 16px;
-    text-align: center;
-}
-
-.footer .copyright{
-    margin-top: 20px;
+.footer {
+  min-width: 100%;
 }

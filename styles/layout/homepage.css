@@ -22,7 +22,6 @@ body {
 .Iam b {
   float: left;
   overflow: hidden;
-  position: relative;
   height: 70px;
   top: 60px;
 }
