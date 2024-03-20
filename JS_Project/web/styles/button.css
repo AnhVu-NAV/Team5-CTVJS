@@ -1,0 +1,14 @@
+.button_send .send_request{
+    font: normal 16px/20px "Roboto", sans-serif ;
+    margin-top: 20px;
+    margin-left: 42%;
+    margin-right: 25%;
+    padding: 10px 20px;
+    background-color: #e74c3c;
+    border-radius: 1dvb;
+    color: #000000;
+}
+
+.button_send .send_request:hover{
+    background-color: #ff4d00;
+}
