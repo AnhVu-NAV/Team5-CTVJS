@@ -1,0 +1,79 @@
+
+body{
+    background-color: #2d2d2d;
+}
+
+h1.title {
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-bottom: 1%;
+    color: #e74c3c;
+    font: bold normal 40px/60px "Roboto", sans-serif;
+}
+
+.note {
+    margin-top: 1%;
+    margin-bottom: 20px;
+    margin-left: 5%;
+    color: #ffffff;
+}
+
+.command1 {
+    font-style: italic;
+    margin-top: 10px;
+    font: bold normal 16px/20px "Roboto", sans-serif ;
+    padding-top: 5px;
+    margin-bottom: 5px;
+}
+
+.form_main {
+    background-color: rgba(255, 255, 255, 0.75);
+    width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 2dvb;
+}
+
+.form_main .meomeo {
+    font: bold normal 16px/20px "Roboto", sans-serif ;
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.fillin{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #3b3a3a;
+    border-radius: 1.5dvb;
+}
+
+.table1, .new_time {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    font: normal 16px/20px "Roboto", sans-serif ;
+    border: 1px solid #020202;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #e74c3c;
+}
+
+tbody tr:hover {
+    background-color: #d16052;
+}
+
+.fillin::placeholder{
+    font: normal 16px/20px "Roboto", sans-serif ;
+    font-style: italic;
+    font-size: medium;
+}
+
+/* 27021988 */
