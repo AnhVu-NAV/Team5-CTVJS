@@ -2,23 +2,23 @@
 
     <div class="header">
         <ul id="header-title">
-            <li><a id="homeLogo" href="index.html"> 
-                
-                  FPTU 
-
-            </a></li>
-            <li><a id="itemheader" href="">
-                
-                  All Requests
-
-            </a></li>
-            <li><a id="itemheader" href=""> 
-                
-                  Add Request
-
-            </a></li>
-
+            <span class="hamburger">&#9776;</span> <!-- Hamburger Icon -->
+            <li class="homeLogo"><a id="homeLogo" href="">FPTU CCSS</a></li>
+            <li><a id="itemheader" class="nav-item" href="">All Requests</a></li>
+            <li><a id="itemheader" class="nav-item" href="">Add Request</a></li>
         </ul>
     </div>
 
 </template>
+
+<!-- Responsive -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const hamburger = document.querySelector('.hamburger');
+        const headerTitle = document.querySelector('#header-title'); // Lấy thẻ UL chứa tất cả các li
+
+        hamburger.addEventListener('click', function() {
+            headerTitle.classList.toggle('active'); // Toggle class 'active' trên thẻ UL
+        });
+    });
+</script>

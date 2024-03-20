@@ -2,6 +2,7 @@
 @import url(../assets/fonts/font.css);
 @import url(./base/header_footer.css);
 @import url(./base/reset.css);
+@import url(./layout/allRequestStyle.css);
 *{
     font-family: "Roboto", sans-serif;
     font-weight: 400;

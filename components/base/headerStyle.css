@@ -38,3 +38,30 @@
     background-color: #ccc;
     display: inline-block;
 }
+
+.hamburger {
+    display: none;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 520px) {
+    .hamburger {
+        display: inline-block;
+        line-height: 60px;
+        padding: 0 24px;
+    }
+
+    #header-title li:not(.homeLogo) { /* Chỉ ẩn các mục không phải là logo */
+        display: none;
+    }
+
+    #header-title.active li:not(.homeLogo) { /* Khi có class active, hiển thị các mục này */
+        display: block;
+        width: 100%; /* Đảm bảo chiếm toàn bộ chiều rộng */
+        background-color: #000; /* Màu nền cho mỗi mục khi mở */
+        color: #fff; /* Màu chữ */
+        padding: 12px 0; /* Padding cho mỗi mục */
+    }
+}
