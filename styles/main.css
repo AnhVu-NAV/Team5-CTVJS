@@ -5,6 +5,8 @@
 @import url(./base/header_footer.css);
 @import url(./base/reset.css);
 @import url(./layout/allRequestStyle.css);
+@import url(../styles/base/button.css);
+@import url(../styles/layout/addpage.css);
 *{
     font-family: "Roboto", sans-serif;
     font-weight: 400;
