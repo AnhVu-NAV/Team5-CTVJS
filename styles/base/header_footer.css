@@ -1,3 +1,9 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 .header{
     height: 60px;
     background-color: #000;
@@ -9,7 +15,7 @@
 }
 
 #homeLogo{
-    color: orange !important;
+    color: #e74c3c !important;
     font-size: 30px;
     font-weight: bolder;
     
@@ -64,4 +70,18 @@
         color: #fff; /* Màu chữ */
         padding: 12px 0; /* Padding cho mỗi mục */
     }
+}
+
+
+.footer{
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px 16px;
+    text-align: center;
+}
+
+.footer .copyright{
+    margin-top: 20px;
 }
