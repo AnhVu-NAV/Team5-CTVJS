@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    height: 60px;
+    background: #20232a; /* Màu nền tối cho header */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+#homeLogo {
+    color: #c0392b; /* Màu đỏ rượu đẹp hơn */
+    font-size: 30px;
+    font-weight: bolder;
+    transition: color 0.3s ease;
+}
+
+#homeLogo:hover {
+    color: #e74c3c; /* Sáng hơn khi hover */
+}
+
+#header-title li {
+    display: inline-block;
+}
+
+#header-title li a {
+    color: #ffffff;
+    text-decoration: none;
+    line-height: 60px;
+    padding: 0 24px;
+    transition: color 0.3s ease;
+}
+
+#header-title li a:hover {
+    color: #c0392b; /* Màu đỏ khi hover */
+}
+
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 520px) {
+    .hamburger {
+        display: inline-block;
+    }
+
+    #header-title li:not(.homeLogo) {
+        display: none;
+    }
+
+    #header-title.active li:not(.homeLogo) {
+        display: block;
+        text-align: left;
+    }
+}
+
+.footer {
+    background-color: #20232a; /* Tương tự như header */
+    color: #8d99ae; /* Màu sắc trung tính */
+    padding: 20px 16px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.footer p {
+    margin-top: 10px;
+}

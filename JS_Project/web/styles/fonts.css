@@ -1,0 +1,43 @@
+* {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400; /* Chọn trọng lượng phù hợp với nội dung, ví dụ: 300 cho light, 500 cho medium */
+    font-style: normal;
+    letter-spacing: 0.5px; /* Tăng khoảng cách giữa các chữ để tạo ra cảm giác thông thoáng */
+}
+
+h1, h2, h3 {
+    font-weight: 600; /* Đặt trọng lượng font nặng hơn cho tiêu đề */
+    color: #333; /* Màu đậm giúp nổi bật */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1); /* Thêm bóng chữ nhẹ để tăng độ sâu */
+}
+
+p {
+    font-size: 16px; /* Chọn kích thước font phù hợp với đọc lướt */
+    color: #666; /* Màu nhẹ hơn cho văn bản để dễ đọc */
+    line-height: 1.6; /* Tăng khoảng cách giữa các dòng để cải thiện khả năng đọc */
+}
+
+a {
+    color: #007bff; /* Màu sắc cho liên kết */
+    text-decoration: none; /* Bỏ gạch chân cho liên kết */
+    transition: color 0.3s ease; /* Hiệu ứng chuyển màu khi di chuột qua */
+}
+
+a:hover {
+    color: #0056b3; /* Màu khi di chuột qua */
+}
+
+button {
+    font-weight: 500; /* Đặt trọng lượng cho nút */
+    background-color: #4CAF50; /* Màu nền cho nút */
+    color: white; /* Màu chữ cho nút */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px; /* Bo góc cho nút */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Đổ bóng cho nút */
+    transition: background-color 0.3s ease; /* Hiệu ứng chuyển màu nền */
+}
+
+button:hover {
+    background-color: #45a049; /* Màu nền khi di chuột qua */
+}
