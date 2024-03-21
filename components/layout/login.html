@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Nhập email và gửi mã captcha</title>
+  <link rel="stylesheet" href="../../styles/layout/login.css">
+  <style>
+  </style>
+</head>
+
+<body>
+  <div id="background-img"></div>
+
+  <div class="container">
+  <h1 class="heading">Contact Form</h1> 
+     <!-- begin email input -->
+    <div class="email-input">
+      <input type="email" id="email" placeholder="Nhập địa chỉ email...">
+      <button class="submit-button" onclick="checkEmail()">Đăng nhập</button>
+    </div>
+    <!-- end email input -->
+    <!-- captcha -->
+    <div class="captcha-container">
+      <label for="captcha" class="captcha">Mã captcha:</label>
+      <div id="captcha-display"></div>
+      <input type="text" id="captcha" placeholder="Nhập mã captcha...">
+      <button class="submit-button" onclick="submitCaptcha()">Gửi</button>
+    </div>
+    <!-- end captcha -->
+  </div>
+  
+
+
+  <script>
+    var currentCaptcha = '';
+    function checkEmail() {
+      var emailInput = document.querySelector('#email');
+      var email = emailInput.value;
+
+      if (email.endsWith('@fpt.edu.vn')) {
+        emailInput.disabled = true;
+        document.querySelector('.email-input .submit-button').disabled = true;
+        document.querySelector('.captcha-container').style.display = 'block';
+
+        // Gửi mã captcha ở đây
+        currentCaptcha = generateCaptcha();
+        displayCaptcha(currentCaptcha);
+      } else {
+        alert('Vui lòng nhập địa chỉ email hợp lệ (có đuôi @fpt.edu.vn).');
+
+      }
+    }
+
+    function submitCaptcha() {
+      var captchaInput = document.querySelector('#captcha');
+      var captcha = captchaInput.value;
+
+      if (captcha === currentCaptcha) {
+        console.log('Mã captcha đã được gửi: ' + captcha);
+      } else {
+        alert('Mã captcha không chính xác. Vui lòng thử lại.');
+
+        // Tạo mã captcha mới
+        currentCaptcha = generateCaptcha();
+        displayCaptcha(currentCaptcha);
+      }
+    }
+
+    function generateCaptcha() {
+      // Tạo và trả về một mã captcha ngẫu nhiên
+      var captcha = Math.random().toString(36).slice(2, 8);
+      return captcha;
+    }
+
+    function displayCaptcha(captcha) {
+      var captchaDisplay = document.querySelector('#captcha-display');
+      captchaDisplay.textContent = captcha;
+    }
+  </script>
+</body>
+
+</html>
